@@ -1,0 +1,10 @@
+Flask==1.1.2
+flask-restx==0.2.0
+Flask-JWT-Extended==3.25.0
+flask-mongoengine==1.0.0
+Flask-API==2.0
+Flask-Script==2.0.6
+marshmallow==3.10.0
+redis==3.5.3
+Flask-Caching==1.9.0
+flask-testing==0.8.1

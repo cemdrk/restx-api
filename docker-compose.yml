@@ -1,0 +1,23 @@
+
+version: '3'
+
+services: 
+  api:
+    build: .
+    ports: 
+      - "5000:5000"
+    links:
+      - db:mongodb
+      - cache:redis
+    container_name: api_1
+    depends_on: 
+      - db
+      - cache
+
+  db:
+    image: mongo:3
+    container_name: db_1
+
+  cache:
+    image: redis:6
+    container_name: cache_1
